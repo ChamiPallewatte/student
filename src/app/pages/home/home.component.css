@@ -1,0 +1,71 @@
+.btn-group{
+    padding:3%;
+}
+
+.action_btn {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;
+}
+
+.btn-group button {
+    background-color: #04AA6D;
+    /* Green background */
+    border: 1px solid green;
+    /* Green border */
+    color: white;
+    /* White text */
+    padding: 10px 24px;
+    /* Some padding */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    float: left;
+    /* Float the buttons side by side */
+    margin: 2px;
+    border-radius: 20px;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+    /* Prevent double borders */
+}
+
+.hr-theme-slash-2 {
+    display: flex;
+    margin-top: -20px;
+    margin-bottom: 20px;}
+
+    .hr-line {
+        width: 100%;
+        position: relative;
+        margin: 15px;
+        border-bottom: 1px solid #000;
+    }
+
+    .hr-icon {
+        position: relative;
+        top: 3px;
+
+    }
+        h2 {
+            font-size: 25px;
+            padding: 2%;
+            text-align: center;
+        }
+
+
+.card {
+    height: 500px;
+    background-color: gray;
+    color: white;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+}
+
+.main-div {
+    padding-left: 5%;
+    padding-right: 5%;
+}

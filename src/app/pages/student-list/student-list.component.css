@@ -1,0 +1,60 @@
+h1 {
+    font-size: 35px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 25px;
+    padding: 2%;
+    text-align: center;
+}
+
+.table-section {
+    padding: 2% 1% 2% 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.action_button {
+    background-color: black;
+    color: white;
+    margin: 2px;
+    border-radius: 20px;
+    padding: 10px;
+
+
+}
+
+.table-row {
+    padding: 5%;
+}
+
+
+
+.hr-theme-slash-2 {
+    display: flex;
+    margin-top: -20px;
+    margin-bottom: 20px;}
+
+    .hr-line {
+        width: 100%;
+        position: relative;
+        margin: 15px;
+        border-bottom: 1px solid #000;
+    }
+
+    .hr-icon {
+        position: relative;
+        top: 3px;
+
+    }
+
+
+
+
+

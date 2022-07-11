@@ -1,1 +1,66 @@
-<p>student-list works!</p>
+<!-- Header banner start  -->
+<div
+  class="p-5 text-center bg-image"
+  style="
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+  "
+>
+  <div class="mask">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white" style="padding: 10%">
+        <h1 class="Heading-text">Our Students</h1>
+        <h4 class="sub-heading-text">
+          Get started for free and start learning for free
+        </h4>
+        <a class="btn btn-outline-light btn-lg" href="#table-mark" role="button"
+          >Submit Now</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<!-- header banner end  -->
+
+<div class="main-div">
+  <!-- start Student mark section -->
+  <div class="table-section" id="table-mark">
+    <h2>Student Mark Sheet</h2>
+    <div class="hr-theme-slash-2">
+      <div class="hr-line"></div>
+      <div class="hr-icon">
+        <i class="material-icons">grade</i>
+      </div>
+      <div class="hr-line"></div>
+    </div>
+    <table class="table">
+      <thead>
+        <tr *ngFor="let student of students">
+          <th scope="col">Student Name</th>
+          <th scope="col">Maths</th>
+          <th scope="col">Science</th>
+          <th scope="col">English</th>
+          <th scope="col">Avarage Marks</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="table-row"></td>
+          <td class="table-row"></td>
+          <td class="table-row"></td>
+          <td class="table-row"></td>
+          <td class="table-row">
+            <button>Delete</button>
+
+            <button>Edit</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- end Student mark section -->
+</div>
