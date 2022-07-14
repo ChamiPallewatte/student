@@ -37,7 +37,7 @@
     </div>
     <table class="table">
       <thead>
-        <tr *ngFor="let student of students">
+        <tr>
           <th scope="col">Student Name</th>
           <th scope="col">Maths</th>
           <th scope="col">Science</th>
@@ -47,11 +47,11 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td class="table-row"></td>
-          <td class="table-row"></td>
-          <td class="table-row"></td>
-          <td class="table-row"></td>
+        <tr *ngFor="let student of students">
+          <td class="table-row">{{ student.name }}</td>
+          <td class="table-row">{{ student.mathsMarks }}</td>
+          <td class="table-row">{{ student.scienceMarks }}</td>
+          <td class="table-row">{{ student.englishMarks }}</td>
           <td class="table-row">
             <button>Delete</button>
 
