@@ -35,7 +35,7 @@
       </div>
       <div class="hr-line"></div>
     </div>
-    <table class="table">
+    <table class="table" *ngIf="students">
       <thead>
         <tr>
           <th scope="col">Student Name</th>
@@ -47,11 +47,11 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td class="table-row"></td>
-          <td class="table-row"></td>
-          <td class="table-row"></td>
-          <td class="table-row"></td>
+        <tr *ngFor="let student of students">
+          <td class="table-row">{{ student.name }}</td>
+          <td class="table-row">{{ student.mathsMarks }}</td>
+          <td class="table-row">{{ student.scienceMarks }}</td>
+          <td class="table-row">{{ student.englishMarks }}</td>
           <td class="table-row"></td>
           <td class="table-row">
             <button class="action_button">Delete</button>
