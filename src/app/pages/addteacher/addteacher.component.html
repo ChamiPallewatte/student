@@ -1,0 +1,64 @@
+<!-- Hero image -->
+<div
+  class="p-5 text-center bg-image"
+  style="
+    background-image: url('assets/images/admin.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+  "
+>
+  <div class="mask">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white" style="padding: 10%">
+        <h1 class="mb-3">Insert New Teacher</h1>
+        <h4 class="mb-3">Fill the form please</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Hero image -->
+
+<!-- Form -->
+
+<form class="form-input">
+  <div class="mb-3">
+    <div class="form-group">
+      <label for="usr">Name:</label>
+      <input
+        type="text"
+        class="form-control"
+        name="teacher.name"
+        placeholder="Name"
+      />
+    </div>
+    <div class="form-group">
+      <label for="usr">Age:</label>
+      <input
+        type="text"
+        class="form-control"
+        name="teacher.age"
+        placeholder="age"
+      />
+    </div>
+    <div class="form-group">
+      <label for="usr">Subject</label>
+      <input
+        type="text-area"
+        class="form-control"
+        name="teacher.subject"
+        placeholder="subject"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="formFile" class="form-label"
+        >Default file input example</label
+      >
+      <input class="form-control" type="file" id="image" />
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Update</button>
+</form>
+<!-- End Form -->

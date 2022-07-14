@@ -13,4 +13,7 @@ export class HomeComponent implements OnInit {
   goToStudentPage() {
     this.router.navigate(['/student']);
   }
+  goToTeacherPage() {
+    this.router.navigate(['/teacher']);
+  }
 }

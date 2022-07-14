@@ -1,0 +1,36 @@
+.table-section {
+    padding: 2% 10% 2% 10%;
+}
+
+.table-heading {
+
+    padding: 2%;
+    text-align: center;
+}
+
+.form-input {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2%;
+}
+
+.form-group {
+    padding-bottom: 2%;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 25px;
+    padding: 2%;
+    text-align: center;
+}

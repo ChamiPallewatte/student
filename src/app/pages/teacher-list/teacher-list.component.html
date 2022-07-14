@@ -1,0 +1,63 @@
+<!-- Header banner start  -->
+<div
+  class="p-5 text-center bg-image"
+  style="
+    background-image: url('assets/images/admin.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+  "
+>
+  <div class="mask">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white" style="padding: 10%">
+        <h1 class="Heading-text">Teacher Details</h1>
+        <h4 class="sub-heading-text">Get started</h4>
+        <a
+          class="btn btn-outline-light btn-lg"
+          role="button"
+          (click)="goToAddTeacherPage()"
+          >Add Teacher</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<!-- header banner end  -->
+
+<!--  our Teachers section  -->
+
+<h2>Our Teachers</h2>
+<div class="hr-theme-slash-2">
+  <div class="hr-line"></div>
+  <div class="hr-icon">
+    <i class="material-icons">grade</i>
+  </div>
+  <div class="hr-line"></div>
+</div>
+
+<section class="section-team">
+  <div class="container">
+    <div class="row">
+      <!-- Start Single Person -->
+
+      <div class="col-sm-6 col-lg-4 col-xl-3">
+        <div class="single-person">
+          <div class="person-image">
+            <img alt="Place image title" />
+            <img />
+            <span class="icon">
+              <i class="fab fa-html5"></i>
+            </span>
+          </div>
+          <div class="person-info">
+            <h3 class="full-name"></h3>
+            <span class="speciality">age :</span>
+          </div>
+          <button class="action_button">Delete</button>
+          <button class="action_button">Edit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
