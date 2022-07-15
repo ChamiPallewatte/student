@@ -22,7 +22,7 @@
 
 <!-- Form -->
 
-<form class="form-input">
+<form #teacherForm="ngForm" (ngSubmit)="onClickSubmit()" class="form-input">
   <div class="mb-3">
     <div class="form-group">
       <label for="usr">Name:</label>
@@ -30,6 +30,7 @@
         type="text"
         class="form-control"
         name="teacher.name"
+        [(ngModel)]="teacher.name"
         placeholder="Name"
       />
     </div>
@@ -39,6 +40,7 @@
         type="text"
         class="form-control"
         name="teacher.age"
+        [(ngModel)]="teacher.age"
         placeholder="age"
       />
     </div>
@@ -48,6 +50,7 @@
         type="text-area"
         class="form-control"
         name="teacher.subject"
+        [(ngModel)]="teacher.subject"
         placeholder="subject"
       />
     </div>
@@ -55,10 +58,19 @@
       <label for="formFile" class="form-label"
         >Default file input example</label
       >
-      <input class="form-control" type="file" id="image" />
+      <input
+        [(ngModel)]="teacher.image"
+        class="form-control"
+        type="file"
+        id="image"
+      />
     </div>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-  <button type="submit" class="btn btn-primary">Update</button>
+  <button type="submit" *ngIf="!isUpdateTeacher" class="btn btn-primary">
+    Submit
+  </button>
+  <button type="submit" *ngIf="isUpdateTeacher" class="btn btn-primary">
+    Update
+  </button>
 </form>
 <!-- End Form -->

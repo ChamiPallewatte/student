@@ -33,7 +33,6 @@ export class StudentListComponent implements OnInit {
   }
   // Delete student
   deleteStudent(id: any) {
-    debugger;
     if (window.confirm('Are you sure, you want to delete?')) {
       this.apiService.deleteStudent(id).subscribe((data: any) => {
         this.loadStudent();
