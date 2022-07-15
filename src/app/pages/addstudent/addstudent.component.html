@@ -22,7 +22,7 @@
 
 <!-- Form -->
 
-<form class="form-input">
+<form #studentForm="ngForm" (ngSubmit)="onClickSubmit()" class="form-input">
   <div class="mb-3">
     <div class="form-group">
       <label for="usr">Name:</label>
@@ -30,6 +30,7 @@
         type="text"
         class="form-control"
         name="student.name"
+        [(ngModel)]="student.name"
         placeholder="Name"
       />
     </div>
@@ -39,6 +40,7 @@
         type="text"
         class="form-control"
         name="student.mathsMarks"
+        [(ngModel)]="student.mathsMarks"
         placeholder="Maths marks"
       />
     </div>
@@ -48,6 +50,7 @@
         type="text"
         class="form-control"
         name="student.scienceMarks"
+        [(ngModel)]="student.scienceMarks"
         placeholder="Science marks"
       />
     </div>
@@ -58,11 +61,16 @@
         class="form-control"
         name="student.englishMarks"
         id="englishMarks"
+        [(ngModel)]="student.englishMarks"
         placeholder="English marks"
       />
     </div>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-  <button type="submit" class="btn btn-primary">Update</button>
+  <button type="submit" *ngIf="!isUpdateStudent" class="btn btn-primary">
+    Submit
+  </button>
+  <button type="submit" *ngIf="isUpdateStudent" class="btn btn-primary">
+    Update
+  </button>
 </form>
 <!-- End Form -->

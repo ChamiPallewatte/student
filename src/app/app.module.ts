@@ -8,6 +8,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { AddstudentComponent } from './pages/addstudent/addstudent.component';
 import { AddteacherComponent } from './pages/addteacher/addteacher.component';
 import { TeacherListComponent } from './pages/teacher-list/teacher-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CalculateAveragePipe } from './pipes/calculate-average.pipe';
 
 @NgModule({
   declarations: [
@@ -16,13 +19,17 @@ import { TeacherListComponent } from './pages/teacher-list/teacher-list.componen
     HomeComponent,
     AddstudentComponent,
     AddteacherComponent,
-    TeacherListComponent
+    TeacherListComponent,
+    CalculateAveragePipe,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

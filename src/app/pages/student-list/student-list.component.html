@@ -52,10 +52,26 @@
           <td class="table-row">{{ student.mathsMarks }}</td>
           <td class="table-row">{{ student.scienceMarks }}</td>
           <td class="table-row">{{ student.englishMarks }}</td>
-          <td class="table-row"></td>
           <td class="table-row">
-            <button class="action_button">Delete</button>
-            <button class="action_button">Edit</button>
+            {{
+              averageMarks
+                | calculateAverage
+                  : student.mathsMarks
+                  : student.scienceMarks
+                  : student.englishMarks
+            }}
+          </td>
+          <td class="table-row">
+            <button
+              class="action_button"
+              class="action_button"
+              (click)="deleteStudent(student.id)"
+            >
+              Delete
+            </button>
+            <button class="action_button" (click)="editStudent(student)">
+              Edit
+            </button>
           </td>
         </tr>
       </tbody>
