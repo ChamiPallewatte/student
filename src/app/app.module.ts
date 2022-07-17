@@ -11,6 +11,7 @@ import { TeacherListComponent } from './pages/teacher-list/teacher-list.componen
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CalculateAveragePipe } from './pipes/calculate-average.pipe';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { CalculateAveragePipe } from './pipes/calculate-average.pipe';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    NgxPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

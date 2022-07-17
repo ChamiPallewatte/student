@@ -11,6 +11,9 @@ import { TeacherService } from 'src/app/services/teacher.service';
 })
 export class TeacherListComponent implements OnInit {
   teachers: Teacher[] = [];
+  currentPage: number = 1;
+  itemperPage: number = 10;
+
   constructor(
     private apiService: ApiService,
     public router: Router,
