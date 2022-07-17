@@ -41,7 +41,13 @@
     <div class="row">
       <!-- Start Single Person -->
 
-      <div class="col-sm-6 col-lg-4 col-xl-3" *ngFor="let teacher of teachers">
+      <div
+        class="col-sm-6 col-lg-4 col-xl-3"
+        *ngFor="
+          let teacher of teachers
+            | paginate: { itemsPerPage: itemperPage, currentPage: currentPage }
+        "
+      >
         <div class="single-person">
           <div class="person-image">
             <span class="icon">
@@ -65,4 +71,7 @@
       </div>
     </div>
   </div>
+  <pagination-controls
+    (pageChange)="currentPage = $event"
+  ></pagination-controls>
 </section>
