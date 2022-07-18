@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { ApiService } from 'src/app/http/api.service';
 import { Teacher } from 'src/app/models/teacher.model';
@@ -17,7 +18,8 @@ export class TeacherListComponent implements OnInit {
   constructor(
     private apiService: ApiService,
     public router: Router,
-    private teacherService: TeacherService
+    private teacherService: TeacherService,
+    private sanitizer: DomSanitizer
   ) {}
 
   ngOnInit(): void {
@@ -25,6 +27,11 @@ export class TeacherListComponent implements OnInit {
   }
   goToAddTeacherPage() {
     this.router.navigate(['/addteacher']);
+  }
+
+  sanitizeImageUrl(imgURL: string): SafeUrl {
+    debugger;
+    return this.sanitizer.bypassSecurityTrustUrl(imgURL);
   }
 
   loadteacher() {

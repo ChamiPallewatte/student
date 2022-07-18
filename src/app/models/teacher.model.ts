@@ -3,5 +3,5 @@ export class Teacher {
   name: string = '';
   age: number = 0;
   subject: string = '';
-  image: string = '';
+  imgURL: string = '';
 }
