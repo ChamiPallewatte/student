@@ -49,12 +49,9 @@
         "
       >
         <div class="single-person">
-          <div class="person-image">
-            <span class="icon">
-              <i class="fa fa-user"></i>
-            </span>
-          </div>
           <div class="person-info">
+            <img [src]="teacher.image" height="100px" width="100px" />
+
             <h3 class="full-name">{{ teacher.name }}</h3>
             <span class="speciality">age : {{ teacher.age }}</span
             ><br />
