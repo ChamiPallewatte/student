@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ApiService } from 'src/app/http/api.service';
 import { StudentService } from 'src/app/services/student.service';
@@ -11,6 +11,8 @@ import { Student } from './student.model';
 })
 export class StudentListComponent implements OnInit {
   students: Student[] = [];
+  @Input() selectedStudent: any;
+  @Input() Student = [];
   averageMarks: number = 0;
   constructor(
     private router: Router,
