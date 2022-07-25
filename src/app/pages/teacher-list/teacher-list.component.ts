@@ -29,9 +29,9 @@ export class TeacherListComponent implements OnInit {
     this.router.navigate(['/addteacher']);
   }
 
-  sanitizeImageUrl(imgURL: string): SafeUrl {
+  sanitizeImageUrl(image: string): SafeUrl {
     debugger;
-    return this.sanitizer.bypassSecurityTrustUrl(imgURL);
+    return this.sanitizer.bypassSecurityTrustUrl(image);
   }
 
   loadteacher() {
